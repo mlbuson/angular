@@ -2,7 +2,7 @@
 
 ## Desafío
 
-Tu misión es crear una aplicación Angular que se asemeje lo más posible a la mostrada en el video adjunto llamado AngularTest.webm.
+Tu misión es crear una aplicación Angular que se asemeje lo más posible a la mostrada en el video adjunto llamado [AngularTest.webm]AngularTest.webm.
 
 ## Instrucciones
 
