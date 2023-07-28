@@ -15,7 +15,7 @@ Tu misión es crear una aplicación Angular que se asemeje lo más posible a la 
 
 Recomendaciones:
 - Utiliza Reactive Forms para el formulario de ingreso.
-- Crea un servicio y un interceptor para simular una API local ficticia.
+- Crea un servicio y un interceptor para simular una fake API local .
 
 ### Product List:
 
