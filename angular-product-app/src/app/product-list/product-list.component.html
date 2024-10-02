@@ -1,0 +1,25 @@
+<div>
+    <label for="category">Categoría</label>
+    <select id="category" (change)="filterByCategory($event.target.value)">
+      <option value="all">Todas</option>
+      <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+    </select>
+  </div>
+  
+  <table>
+    <tr>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Acciones</th>
+    </tr>
+    <tr *ngFor="let product of filteredProducts">
+      <td>{{ product.title }}</td>
+      <td>{{ product.price | currency }}</td>
+      <td>
+        <button (click)="openModal(product)">Detalles</button>
+      </td>
+    </tr>
+  </table>
+  
+  <button (click)="logout()">Logout</button>
+  
