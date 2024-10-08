@@ -1,13 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>AngularProductApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Aplicación de Gestión de Productos | Angular</title>
   <base href="/">
+  
+  <!-- Metadatos para SEO -->
+  <meta name="description" content="Aplicación web para la gestión eficiente de productos, desarrollada con Angular.">
+  <meta name="keywords" content="angular, productos, gestión, aplicación web">
+  <meta name="author" content="Tu Nombre o Empresa">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon y iconos para diferentes dispositivos -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+
+  <!-- Metadatos para redes sociales -->
+  <meta property="og:title" content="Aplicación de Gestión de Productos">
+  <meta property="og:description" content="Gestiona tus productos de manera eficiente con nuestra aplicación web Angular.">
+  <meta property="og:image" content="https://tudominio.com/assets/og-image.jpg">
+  <meta property="og:url" content="https://tudominio.com">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Preconexión a orígenes externos -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- Estilos y fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+    .app-loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      z-index: 9999;
+    }
+    .app-loading .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
 </head>
 <body>
-  <app-root></app-root>
+  <app-root>
+    <div class="app-loading">
+      <div class="spinner"></div>
+      <p>Cargando aplicación...</p>
+    </div>
+  </app-root>
+  
+  <noscript>
+    <p>Lo sentimos, esta aplicación requiere JavaScript para funcionar. Por favor, habilite JavaScript en su navegador y vuelva a cargar la página.</p>
+  </noscript>
+
+  <!-- Scripts opcionales -->
+  <!-- <script src="https://cdn.example.com/some-external-script.js" async defer></script> -->
 </body>
 </html>
