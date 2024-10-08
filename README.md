@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bienvenido al test de Angular de ADOCLIC
 
 ## Desafío
@@ -40,3 +41,6 @@ Recomendaciones:
 - Emplea Ng-bootstrap para el modal.
 
 ¡Buena suerte en el desafío! Esperamos ver tu implementación en Angular.
+=======
+# angular
+
